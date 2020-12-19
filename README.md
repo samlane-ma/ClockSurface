@@ -1,9 +1,9 @@
 # ClockSurface
 ## Python module to create a clock surface
 
-ClockSurface is a python class written for a applet before deciding to rewrite the applet in Vala.  This module is by no means a perfect work of art, but rather than wasting the effort, possibly this will be of use to someone.
+ClockSurface is a python class written for an applet before deciding to rewrite the applet in Vala.  This module is by no means a perfect work of art, but rather than wasting the effort, possibly this will be of use to someone.
 
-ClockSurface creates a cairo clock surface that can be used to set a Gtk.Image.  Without any parameters or customizations, it will return a 100px x 100px cairo.ImageSurface, with a white face, black hands, basic markings, and the time set to the current time.
+ClockSurface creates a clock that can be used to set a Gtk.Image.  Without any parameters or customizations, it will return a 100px x 100px cairo.ImageSurface, with a white face, black hands, basic markings, and the time set to the current time.
 
 The clock can be easily customized to change the color of the face, frame, and hands.  Furthermore, attributes such as length and width of the hands, the types of hour markings, and whether or not to show the second hand.
 
@@ -33,6 +33,7 @@ The provided clock1.py and clock2.py are working examples of the class in action
     * ClockSurface.dot_size       = width (size of the center dot)
      
 * ClockSurface.set_framewidth(width: int)
+  
   Sets the width of the clock frame (outline)
   
 * ClockSurface.set_colors(face: str, frame: str, hand: str)
